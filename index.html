@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zehabesha | Home</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="main-content-holder">
+      <div class="category-filter-holder">
+        <h2 class="filter-title">Category Filter</h2>
+        <div class="category-filter-checkbox-holder">
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">All</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">Electronics</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">Clothes</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">Shoes</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">Laptops</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">Watches</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">Balls</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="category-filter-checkboxes"
+              name="category-filter-checkboxes"
+            /><label for="category-filter-checkboxes">Kitchen Equipments</label>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section class="items-section">
+          <div class="search-holder">
+            <img src="./image/svg/search.svg" class="search-image" />
+            <input
+              type="search"
+              name="search"
+              class="search-input"
+              placeholder="Search"
+            />
+          </div>
+          <h1 class="items-section-title">Our Items</h1>
+
+          <!-- Where the items load -->
+
+          <!-- When filtered items are empty -->
+          <div class="when-empty-container">
+            <p>Sorry, we don't have items that match your filter</p>
+            <img
+              src="./image/empty-box.png"
+              alt="empty-box"
+              class="empty-box-image"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Blurred div Container -->
+    <div class="blurred-div"></div>
+
+    <!-- Item viewer Container -->
+    <div class="item-viewer-container">
+      <div class="close-viewer-button">
+        <p>Close</p>
+      </div>
+      <img
+        src="image\balls-removebg-preview.png"
+        alt="Item 2"
+        class="item-image-in-viewer"
+      />
+      <div class="description-container-on-viewer">
+        <h1 class="description-title-on-viewer">Ball</h1>
+        <p class="description-on-viewer">Description of Item 2.</p>
+        <p class="price-on-viewer">Price: $15.00</p>
+
+        <button class="add-cart-button-on-viewer">
+          Add to Cart<img
+            src="./image/svg/cart2.svg"
+            alt="cart"
+            class="cart-image-on-add-to-cart-button"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart container -->
+    <div class="close-cart-button">
+      <p>Close</p>
+    </div>
+    <div class="cart-container">
+      <h1 class="cart-title">Cart</h1>
+      <div class="when-cart-is-empty-container">
+        <p class="when-cart-is-empty-text">
+          Your cart is empty. Add items to your cart if you want to purchase.
+        </p>
+        <img
+          src="./image/empty-cart.png"
+          alt="empty cart"
+          class="empty-cart-image"
+        />
+      </div>
+    </div>
+    <div class="price-calculator">
+      <span>Total Price: </span><span class="total-price-in-cart">0.00</span
+      ><span class="dollar-sign-in-cart">$</span>
+      <button class="purchase-button-on-cart">Purchase</button>
+    </div>
+
+    <!--Message-->
+    <div class="message-div">
+      <p></p>
+    </div>
+  </body>
+</html>
+<script src="./base.js"></script>
+<script src="./script.js"></script>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auction</title>
+    <link rel="stylesheet" href="./auction.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Welcome to the Auction</h1>
+      <p class="add-information-text">Add your auction item information</p>
+      <section class="product-list">
+        <article class="product">
+          <div class="selection-holder">
+            <label for="category">Choose your Category: </label>
+
+            <select
+              id="input"
+              class="auction-inputs category-selector"
+              name="category"
+              required
+            >
+              <option value="Balls">Balls</option>
+              <option value="Clothes">Clothes</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Kitchen Equipments">Kitchen Equipments</option>
+              <option value="Laptops">Laptops</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Watches">Watches</option>
+            </select>
+          </div>
+
+          <input
+            id="input"
+            class="auction-inputs description-input"
+            type="text"
+            placeholder="Description of your bidding item"
+            required
+          />
+          <input
+            id="input"
+            class="auction-inputs price-input"
+            type="number"
+            placeholder="Price of your bidding item"
+            required
+          />
+          <input
+            type="file"
+            id="item-image"
+            class="auction-inputs image-input"
+            name="item-image"
+            accept="image/*"
+            style="
+              margin-bottom: 10px;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            "
+            required
+          />
+          <input
+            id="input"
+            class="auction-inputs starting-price-input"
+            type="number"
+            placeholder="Starting price"
+          />
+          <button class="place-bid-button">Place Bid</button>
+        </article>
+      </section>
+    </main>
+
+    <section class="items-on-bid-section">
+      <h2 class="items-on-bid-title">Items on Bid</h2>
+      <div class="items-on-bid-holder"></div>
+    </section>
+  </body>
+</html>
+<script src="./base.js"></script>
+<script src="./auction.js"></script>

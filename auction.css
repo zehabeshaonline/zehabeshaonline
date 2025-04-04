@@ -1,0 +1,87 @@
+main {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-list {
+  padding: 20px;
+}
+
+.product {
+  background: #ffffff;
+  border: 2px solid var(--dark-green);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selection-holder {
+  width: 100%;
+  padding: 10px;
+}
+
+.selection-holder label {
+  font-size: 20px;
+}
+
+.add-information-text {
+  font-size: 20px;
+}
+
+.auction-inputs {
+  width: 100%;
+  min-height: 40px;
+  font-size: 22px;
+  margin: 10px 5px 0 5px;
+  padding: 10px;
+}
+
+.place-bid-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.items-on-bid-section {
+  margin: 50px;
+}
+
+.items-on-bid-holder {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.each-items-on-bid {
+  background-color: var(--lighter-green);
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.image-on-bid {
+  max-width: 90%;
+  margin-bottom: 10px;
+}
+
+.continue-bid-input {
+  font-size: 19px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.continue-bid-button {
+  font-size: 18px;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
